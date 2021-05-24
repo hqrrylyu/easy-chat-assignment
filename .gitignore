@@ -18,3 +18,4 @@ tests/report/
 *.sqlite3
 envs
 *.env
+/easy_chat/staticfiles
