@@ -1,8 +1,9 @@
 'use strict'
 
 ;((g) => {
+  const wsProtocol = g.location.protocol === 'https:' ? 'wss://' : 'ws://'
   const ws = new g.WebSocket(
-    'ws://' + document.domain + ':' + document.location.port + '/ws/'
+    wsProtocol + document.domain + ':' + document.location.port + '/ws/'
   )
 
   const messageTemplateEl = document.getElementById('message-template')
