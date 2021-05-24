@@ -7,6 +7,10 @@ name = "pypi"
 django = "*"
 channels = "*"
 environs = {extras = ["django"], version = "*"}
+gunicorn = "*"
+whitenoise = "*"
+psycopg2-binary = "*"
+daphne = "*"
 
 [dev-packages]
 flake8 = "*"

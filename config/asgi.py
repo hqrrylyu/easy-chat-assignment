@@ -14,7 +14,7 @@ from channels.routing import ProtocolTypeRouter, URLRouter
 from django.core.asgi import get_asgi_application
 from easy_chat.chat.urls import websocket_urlpatterns as chat_websocket_urlpatterns
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings.prod")
 
 application = ProtocolTypeRouter(
     {
