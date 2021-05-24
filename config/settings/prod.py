@@ -2,7 +2,7 @@
 from .base import *
 
 DATABASES = {
-    "default": env.dj_db_url("DATABASE_URL"),
+    "default": env.dj_db_url("DATABASE_URL", engine="django.db.backends.postgresql"),
 }
 
 DATABASES["default"]["CONN_MAX_AGE"] = 50
